@@ -57,7 +57,7 @@ public class ConcertController {
         Concert concierto = concertService.getConciertoById(idConcierto);
         List<Artist> listaArtista = artistService.listArtista();
         model.addAttribute("concierto", concierto);
-        model.addAttribute("artista", listaArtista);
+        model.addAttribute("artist", listaArtista);
         return "build";
     }
     
